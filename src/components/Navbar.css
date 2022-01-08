@@ -1,0 +1,15 @@
+.Navbar {
+  text-align: center;
+  background-color: #abebc6;
+}
+.Style {
+  list-style: none;
+  text-align: center;
+  display: inline-flex;
+  margin-left: 20px;
+}
+.Style1 {
+  list-style: none;
+  text-align: center;
+  display: inline-flex;
+}
