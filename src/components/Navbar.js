@@ -1,11 +1,18 @@
-function Navbar(){
-    return <nav class="Navbar">PACHITA CO.  <h1>Tienda de productos sustentables!</h1>
+import React from 'react'
+import CartIcon from './ShoppingCart.js';
+
+
+
+const Navbar = () => {
+    return <nav className="Navbar">PACHITA CO.
       <ul>
-        <li class="Style1"><a href="https://www.instagram.com/pachita.co/"> Home </a></li>
-        <li class="Style"><a href="https://www.instagram.com/pachita.co/"> Tienda </a></li>
-        <li class="Style"><a href="https://www.instagram.com/pachita.co/"> Quienes somos </a></li>
-        <li class="Style"><a href="https://www.instagram.com/pachita.co/"> Referencias</a></li>
-      </ul>
+        <li className="Style1"><a href="https://www.instagram.com/pachita.co/"> Home </a></li>
+        <li className="Style1"><a href="https://www.instagram.com/pachita.co/"> Tienda </a></li>
+        <li className="Style1"><a href="https://www.instagram.com/pachita.co/"> Quienes somos </a></li>
+        <li className="Style1"><a href="https://www.instagram.com/pachita.co/"> Referencias</a></li>
+        </ul>
+        
+        <CartIcon/>
     </nav>
     
 }
