@@ -1,0 +1,9 @@
+.cardProducts {
+  border: lightslategrey 1px;
+  width: 300;
+}
+
+.imgStyle {
+  border-radius: 500px;
+  width: 300px;
+}
