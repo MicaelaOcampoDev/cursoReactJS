@@ -1,4 +1,3 @@
-
 const Item = ({product}) => {
     return (
         <div>
