@@ -1,0 +1,12 @@
+.buttonbuy {
+  width: 250px;
+  height: 30px;
+  background-color: rgb(112, 224, 219);
+  border-radius: 20px;
+  align-content: center;
+}
+
+.imgDetail {
+  border-radius: 400px;
+  width: 300px;
+}

@@ -1,9 +1,10 @@
 import React from 'react';
 import { GrCart } from 'react-icons/gr';
-import './ItemCount.css';
+import './Navbar.css';
 
 const CartIcon =() => {
-    return (<GrCart/>)
+    return (
+    <GrCart/>)
     
 
 };

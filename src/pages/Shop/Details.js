@@ -1,7 +1,7 @@
 import { useEffect , useState } from "react";
-import  Item from "./ItemDetailContainer.js";
-import "./Items.css";
-import {getDetail} from './ItemDetail.js';
+import  Item from "../Shop/ItemDetailContainer";
+import "../Shop/Details.css"
+import {getDetail} from '../Shop/ItemDetail';
 
 function ItemDetail(){
     const [products, setProducts]= useState ([]);

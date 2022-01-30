@@ -3,6 +3,7 @@ import {getProducts} from './ItemList.js';
 import  Item from "./ItemContainer.js";
 import "./Items.css";
 
+
 function ItemList(){
     const [products, setProducts]= useState ([]);
 
@@ -19,6 +20,7 @@ function ItemList(){
             {products.map ((product)=>(
                <Item key={product.id} product={product} />
             ))}
+            
         </div>
     );
 }

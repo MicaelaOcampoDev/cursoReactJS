@@ -7,6 +7,7 @@ export const products = [
         description:
           'Decile chau al plastico con este espectacular shampoo solido, una excelente manera de cuidar al medio ambiente y a tu cabello.',
         img: 'https://faunacosmeticanatural.com/wp-content/uploads/2020/12/diferenciashampoosolidoyjabon-min.jpg'
+        
       },
       {
         id: 2,

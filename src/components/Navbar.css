@@ -5,3 +5,7 @@
   justify-content: space-around;
   text-align: center;
 }
+.StyleLi {
+  display: inline;
+  margin: 15px;
+}
