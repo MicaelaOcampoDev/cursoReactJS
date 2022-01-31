@@ -1,7 +1,7 @@
 import { useEffect , useState } from "react";
-import  Item from "../Shop/ItemDetailContainer";
-import "../Shop/Details.css"
-import {getDetail} from '../Shop/ItemDetail';
+import  Item from "./ItemDetailContainer";
+import "./Details.css"
+import {getDetail} from './ItemDetail';
 
 function ItemDetail(){
     const [products, setProducts]= useState ([]);
@@ -15,7 +15,7 @@ function ItemDetail(){
 
     return (
         <div>
-            <h1> Detalle de producto</h1>
+            
             {products.map ((product)=>(
                <Item key={product.id} product={product} />
             ))}

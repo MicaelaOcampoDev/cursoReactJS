@@ -1,24 +1,31 @@
 import "./components/Navbar.css";
 import './App.css';
 import Navbar from './components/Navbar';
-import Card from "./components/ThreeCards";
-import ItemList from "./components/Items";
-import "./components/Items.css";
-import ItemDetail from "./pages/Shop/Details";
+import {BrowserRouter, Routes, Route} from "react-router-dom";
+import Home from "./pages/Home";
+import AboutUs from "./pages/AboutUs";
+import ProductsPage from "./pages/Products";
+import ProdDetails from "./pages/ProdDetails";
 
 function App() {
   return (
-    <div>
+   <BrowserRouter>
+   <Navbar/>
+    <Routes>
+      <Route path="/"/>
+        <Route index element={<Home/> }/>
+        <Route path="/aboutUs" element={<AboutUs/> }/>
+        <Route path="/products">
+           <Route index element={<ProductsPage/> }/>
+           <Route path=":productId" element={<ProdDetails/> }/>
+        </Route>
+    </Routes>
 
-      <Navbar/>
-      <Card/>
-      <ItemList/>
-      <ItemDetail/>
-      
-        
-    </div>
+   </BrowserRouter>
   );
-}
+};
 
 
 export default App;
+
+

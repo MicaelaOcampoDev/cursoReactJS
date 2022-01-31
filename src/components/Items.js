@@ -16,7 +16,7 @@ function ItemList(){
 
     return (
         <div>
-            <h1> Tienda ecologica!</h1>
+            
             {products.map ((product)=>(
                <Item key={product.id} product={product} />
             ))}

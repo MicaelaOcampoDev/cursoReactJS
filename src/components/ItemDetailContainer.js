@@ -1,5 +1,5 @@
 import React from 'react';
-import Count from "../../components/ItemCount.js"
+import Count from "./ItemCount.js"
 export default function Item ({product})  {
     return (
         <div>
