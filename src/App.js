@@ -6,9 +6,11 @@ import Home from "./pages/Home";
 import AboutUs from "./pages/AboutUs";
 import ProductsPage from "./pages/Products";
 import ProdDetails from "./pages/ProdDetails";
+import { CartContext } from "./context/CartContext";
 
 function App() {
   return (
+    <CartContext.Provider>  
    <BrowserRouter>
    <Navbar/>
     <Routes>
@@ -22,6 +24,7 @@ function App() {
     </Routes>
 
    </BrowserRouter>
+   </CartContext.Provider>  
   );
 };
 

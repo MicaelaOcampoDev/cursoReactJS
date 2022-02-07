@@ -1,4 +1,4 @@
-
+import Count from "./ItemCount.js"
 import React from 'react';
 import "./Items.css";
 
@@ -7,7 +7,11 @@ const Item = ({product}) => {
         <div className="imgStyle">
             <img className="imgStyle" src={product.img} alt= {product.name}/>
             <p className="paragraph" > {product.name}  </p>
-            <button className='buttonVermas'>Ver mas!</button>
+            
+            <Count/>
+
+
+
            
         </div>
     );

@@ -17,10 +17,15 @@ export default function Count (){
 
     return (
         <div className='count'>
-            <h3>Cantidad de unidades: {counter}</h3>
-            <button className='but' onClick={contarClick}>COMPRAR +</button>
+            
+            <button className='but' onClick={contarClick}> +</button>
+
+            <h3> {counter}</h3>
+
             <button className='but' onClick={restar}>-</button>
         </div>
     );
 
 }
+
+

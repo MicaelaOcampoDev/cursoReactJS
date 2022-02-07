@@ -1,5 +1,7 @@
 import React from 'react';
-import Count from "./ItemCount.js"
+
+
+
 export default function Item ({product})  {
     return (
         <div>
@@ -8,7 +10,7 @@ export default function Item ({product})  {
             <p>{product.name} para todo tipo de cabello! </p>
             <p> {product.description} </p>
             <p>Precio: {product.price} "Stock: 389 unidades"</p>
-            <Count/>
+            <button className='buttonVermas'>Ver mas!</button>
 
             
         </div>
