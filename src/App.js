@@ -5,13 +5,17 @@ import {BrowserRouter, Routes, Route} from "react-router-dom";
 import Home from "./pages/Home";
 import AboutUs from "./pages/AboutUs";
 import ProductsPage from "./pages/Products";
-import ProdDetails from "./pages/ProdDetails";
-import { CartContext } from "./context/CartContext";
-import CartWidget from "./pages/Cart";
+
+import CartPage from "./pages/Cart";
+import { CartProvider } from "./context/CartContext";
+     
+     
+
+
 
 function App() {
   return (
-    <CartContext.Provider>  
+    <CartProvider>  
    <BrowserRouter>
    <Navbar/>
     <Routes>
@@ -20,13 +24,14 @@ function App() {
         <Route path="/aboutUs" element={<AboutUs/> }/>
         <Route path="/products">
            <Route index element={<ProductsPage/> }/>
-           <Route path=":productId" element={<ProdDetails/> }/>
+           
         </Route>
-        <Route path="/cart" element={<CartWidget/> }></Route>
+
+        <Route path="/cart" element={<CartPage/>} />
     </Routes>
 
    </BrowserRouter>
-   </CartContext.Provider>  
+   </CartProvider>  
   );
 };
 
